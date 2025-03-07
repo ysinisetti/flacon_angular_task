@@ -1,0 +1,33 @@
+<div id="data-table">
+    <button style="float: right;margin:10px" (click)="createUser()">
+        create user
+    </button>
+    <table id="html-data-table">
+        <thead>
+            <tr>
+                <th>Index</th>
+                <th>Email</th>
+                <th>Name</th>
+                <th>user name</th>
+                <th>password</th>
+                <th>phone number</th>
+                <th style="width:100px">address</th>
+                <th>edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let data of userDetails; index as i">
+                <td>{{i+1}}</td>
+                <td>{{data.email}}</td>
+                <td>{{data['name']['firstname']}}&nbsp;{{data['name']['lastname']}}</td>
+                <td>{{data['username']}}</td>
+                <td>{{data['password']}}</td>
+                <td>{{data['phone']}}</td>
+                <td style="word-wrap: break-word;">{{data['address']['number']}} &nbsp; {{data['address']['street']}} &nbsp;{{data['address']['city']}} &nbsp; </td>
+                <td><button (click)="edit(data)">Edit</button></td>
+                <td><button (click)="delete(data.id)">Delete</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

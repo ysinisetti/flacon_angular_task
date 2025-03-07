@@ -1,0 +1,67 @@
+.form-control {
+    height: auto;
+    padding: 5px;
+    font-size: 14px;
+    width:300px;
+    color: #222222;
+    border-radius: 0;
+    background: #FDFDFD;
+    border: 1px solid #141415;
+}  
+
+label{
+    padding : 5px;
+}
+
+.form{
+    border: 0.5px solid #141415;
+    padding : 20px;
+    padding-bottom: 80px;
+}
+
+h3{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.row{
+    display:flex;
+    flex-direction: row;
+
+}
+.col{
+    display: flex;
+    flex-direction: column;
+}
+
+.pad_10{
+    padding:10px;
+}
+
+.mg_bt_5{
+    margin-bottom: 5px;
+}
+
+.btn-danger,
+body .btn-danger:hover {
+  background: #312BC6;
+  border-color: #312BC6;
+  color: #4EABE6;
+}
+
+.btn-group-sm>.btn,
+.btn-sm {
+  padding: 10px 16px 10px;
+  font-size: 15px;
+  line-height: 1.5;
+  border-radius: 0;
+}
+
+.btn-group-lg>.btn,
+.btn-lg {
+  padding: 13px 15px 15px;
+  font-size: 16px;
+  border-radius: 0;
+  text-transform: uppercase;
+}

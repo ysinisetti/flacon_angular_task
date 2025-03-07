@@ -1,0 +1,29 @@
+<div  class="form">
+    <h3>Enter the Details</h3>
+    <form  [formGroup]="userDetails" (ngSubmit)="onSubmit()">
+        <div class="row mg_bt_5">
+
+            <div class="col pad_10">
+                <label>User Name :</label>
+                <input type="text" class="form-control" formControlName="username" />
+            </div>
+
+
+            <div class="col pad_10">
+                <label>Email :</label>
+                <input type="text" class="form-control" formControlName="email" />
+            </div>
+
+            <div class="col pad_10">
+                <label>password :</label>
+                <input type="text" class="form-control" formControlName="password" />
+            </div>
+        </div>
+
+        <button type="submit" class="btn btn-danger btn-lg " style="float: right;" type="submit">
+            submit
+        </button>
+    </form>
+
+
+</div>
